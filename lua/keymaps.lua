@@ -10,7 +10,7 @@ end
 vim.g.mapleader = " "
 
 map("i", "jk", "<Esc>")
-map("n", "<Leader>f", ":Telescope file_browser<CR>")
+map("n", "<Leader>fb", ":Telescope file_browser<CR>")
 map("n", "<Leader>t", ":ToggleTerm<CR>")
 map("t", "<C-t>", "<Esc>:ToggleTerm<CR>")
 
