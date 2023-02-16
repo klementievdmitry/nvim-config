@@ -36,6 +36,20 @@ require("lazy").setup({
         },
     },
 
+    -- Cursorline/Cursorword plugin
+    {
+        "yamatsum/nvim-cursorline",
+        config = function()
+            require("nvim-cursorline").setup({
+                cursorline = {
+                    enable = true,
+                    timeout = 1000,
+                    number = false,
+                },
+            })
+        end
+    },
+
     -- Treesitter
     {
         "nvim-treesitter/nvim-treesitter",
