@@ -36,6 +36,24 @@ require("lazy").setup({
         },
     },
 
+    -- Treesitter
+    {
+        "nvim-treesitter/nvim-treesitter",
+        config = function()
+            require("nvim-treesitter.configs").setup({
+                ensure_installed = { "c", "cpp", "lua", "vim", "rust", "help", "cmake" }
+            })
+        end
+    },
+
+    -- Git decorations
+    {
+        "lewis6991/gitsigns.nvim",
+        config = function()
+            require("gitsigns").setup({})
+        end
+    },
+
     -- Terminal
     {
         "akinsho/toggleterm.nvim",
