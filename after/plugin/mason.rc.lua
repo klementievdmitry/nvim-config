@@ -6,5 +6,7 @@ require("mason-lspconfig").setup({
                 "tailwindcss",
                 "rust-analyzer",
                 "clangd",
+                "bashls",
+                "pyright",
         },
 })
