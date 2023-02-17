@@ -8,4 +8,3 @@ require("mason-lspconfig").setup({
                 "clangd",
         },
 })
- 

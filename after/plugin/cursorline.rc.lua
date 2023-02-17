@@ -5,4 +5,3 @@ require("nvim-cursorline").setup({
                 number = false,
         },
 })
- 
