@@ -1,10 +1,10 @@
 -- Functional wrapper for mapping custom keybindings
 function map(mode, lhs, rhs, opts)
-        local options = { noremap = true }
-        if opts then
-                options = vim.tbl_extend("force", options, opts)
-        end
-        vim.api.nvim_set_keymap(mode, lhs, rhs, options)
+    local options = { noremap = true }
+    if opts then
+        options = vim.tbl_extend("force", options, opts)
+    end
+    vim.api.nvim_set_keymap(mode, lhs, rhs, options)
 end
 
 vim.g.mapleader = " "
@@ -18,8 +18,8 @@ opt.autowrite = true
 opt.cursorline = true
 opt.autoread = true
 
-opt.tabstop = 8
-opt.shiftwidth = 8
+opt.tabstop = 4
+opt.shiftwidth = 4
 opt.shiftround = true
 opt.expandtab = true
 
