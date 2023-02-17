@@ -18,9 +18,6 @@ require("lazy").setup({
         "folke/tokyonight.nvim",
         lazy = false, -- make sure we load this during startup if it is your main colorscheme
         priority = 1000, -- make sure to load this before all the other start plugins
-        config = function()
-            vim.cmd("colorscheme tokyonight")
-        end
     },
 
     -- Highly experimental plugin that completely replaces the UI for `messages`, `cmdline` and the `popupmenu`.
@@ -43,50 +40,19 @@ require("lazy").setup({
             "SmiteshP/nvim-navic",
             "nvim-tree/nvim-web-devicons",
         },
-        config = function()
-            require("barbecue").setup({})
-        end
     },
 
     -- Cursorline/Cursorword plugin
-    {
-        "yamatsum/nvim-cursorline",
-        config = function()
-            require("nvim-cursorline").setup({
-                cursorline = {
-                    enable = true,
-                    timeout = 1000,
-                    number = false,
-                },
-            })
-        end
-    },
+    "yamatsum/nvim-cursorline",
 
     -- Treesitter
-    {
-        "nvim-treesitter/nvim-treesitter",
-        config = function()
-            require("nvim-treesitter.configs").setup({
-                ensure_installed = { "c", "cpp", "lua", "vim", "rust", "help", "cmake" }
-            })
-        end
-    },
+    "nvim-treesitter/nvim-treesitter",
 
     -- Git decorations
-    {
-        "lewis6991/gitsigns.nvim",
-        config = function()
-            require("gitsigns").setup({})
-        end
-    },
+    "lewis6991/gitsigns.nvim",
 
     -- Terminal
-    {
-        "akinsho/toggleterm.nvim",
-        config = function()
-            require("toggleterm").setup({})
-        end
-    },
+    "akinsho/toggleterm.nvim",
 
     -- Telescope
     {
@@ -106,6 +72,15 @@ require("lazy").setup({
         },
     },
 
+
+        -- Nvim tree
+        {
+                "nvim-tree/nvim-tree.lua",
+                dependencies = {
+                        "nvim-tree/nvim-web-devicons",
+                },
+        },
+
     -- Autopairs
     "windwp/nvim-autopairs",
 
@@ -123,12 +98,6 @@ require("lazy").setup({
         dependencies = {
             "williamboman/mason-lspconfig.nvim",
         },
-        config = function()
-            require("mason").setup()
-            require("mason-lspconfig").setup({
-                ensure_installed = { "sumneko_lua", "tsserver", "tailwindcss", "rust-analyzer", "clangd" },
-            })
-        end
     },
 
     -- Autocompletion
