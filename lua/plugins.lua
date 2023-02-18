@@ -33,6 +33,12 @@ require("lazy").setup({
         },
     },
 
+    -- Snippet engine
+    {
+        "L3MON4D3/LuaSnip",
+        version = "<CurrentMajor>.*",
+    },
+
     -- Cursorline/Cursorword plugin
     "yamatsum/nvim-cursorline",
 
