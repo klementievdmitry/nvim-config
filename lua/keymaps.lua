@@ -17,6 +17,8 @@ opt.laststatus = 2
 opt.autowrite = true
 opt.cursorline = true
 opt.autoread = true
+opt.number = true
+opt.relativenumber = true
 
 opt.tabstop = 4
 opt.shiftwidth = 4
