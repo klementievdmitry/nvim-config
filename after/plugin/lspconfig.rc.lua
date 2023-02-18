@@ -44,6 +44,7 @@ local servers = {
     'tsserver',
     'pyright',
     'bashls',
+    'glsl',
 }
 
 for _, lsp in pairs(servers) do

@@ -7,6 +7,8 @@ require('nvim-treesitter.configs').setup({
         'rust',
         'help',
         'cmake',
+        'glsl',
+        'bash',
     },
     sync_install = true,
     auto_install = true,
