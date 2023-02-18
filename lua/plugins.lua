@@ -33,15 +33,6 @@ require("lazy").setup({
         },
     },
 
-    -- VSCode like winbar
-    {
-        "utilyre/barbecue.nvim",
-        dependencies = {
-            "SmiteshP/nvim-navic",
-            "nvim-tree/nvim-web-devicons",
-        },
-    },
-
     -- Cursorline/Cursorword plugin
     "yamatsum/nvim-cursorline",
 
