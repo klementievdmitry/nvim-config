@@ -45,6 +45,7 @@ local servers = {
     'pyright',
     'bashls',
     'glsl',
+    'cmake',
 }
 
 for _, lsp in pairs(servers) do

@@ -8,5 +8,6 @@ require('mason-lspconfig').setup({
         'clangd',
         'bashls',
         'pyright',
+        'cmake-language-server',
     },
 })
