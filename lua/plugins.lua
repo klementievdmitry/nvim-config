@@ -33,6 +33,9 @@ require('lazy').setup({
         },
     },
 
+    -- Filetypes nvim
+    'nathom/filetype.nvim',
+
     -- Snippet engine
     {
         'L3MON4D3/LuaSnip',
