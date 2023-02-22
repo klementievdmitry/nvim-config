@@ -33,6 +33,17 @@ require('lazy').setup({
         },
     },
 
+    -- folke/trouble.nvim
+    {
+        'folke/trouble.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons',
+        },
+    },
+
+    -- folke/lsp-colors.nvim
+    'folke/lsp-colors.nvim',
+
     -- Filetypes nvim
     'nathom/filetype.nvim',
 
