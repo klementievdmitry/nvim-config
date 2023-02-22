@@ -9,5 +9,6 @@ require('mason-lspconfig').setup({
         'bashls',
         'pyright',
         'cmake-language-server',
+        'omnisharp',
     },
 })

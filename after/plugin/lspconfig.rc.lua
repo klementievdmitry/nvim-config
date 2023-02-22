@@ -48,6 +48,11 @@ local servers = {
     'cmake',
 }
 
+require('lspconfig')['omnisharp'].setup({
+    cmd = { 'omnisharp', '--languageserver', '--hostPID', tostring(vim.fn.getpid()) },
+    on_attach = on_attach,
+    flags = lsp_flags,
+})
 for _, lsp in pairs(servers) do
     require('lspconfig')[lsp].setup({
         on_attach = on_attach,
