@@ -41,6 +41,7 @@ local servers = {
     'clangd',
     'sumneko_lua',
     'rust_analyzer',
+    'tailwindcss',
     'tsserver',
     'pyright',
     'bashls',
