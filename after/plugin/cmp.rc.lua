@@ -31,22 +31,6 @@ cmp.setup({
     },
 })
 
-cmp.setup.buffer({
-    sources = cmp.config.sources({
-        { name = 'luasnip' },
-        {
-            name = 'buffer',
-            opts = {
-                get_bufnrs = function()
-                    return vim.api.nvim_list_bufs()
-                end,
-            },
-        },
-        { name = 'path' },
-        { name = 'spell' },
-    }),
-})
-
 vim.cmd [[
     set completeopt=menuone,noinsert,noselect
     highlight! default link CmpItemKind CmpItemMenuDefault
