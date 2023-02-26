@@ -21,10 +21,30 @@ cmp.setup({
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
         { name = 'buffer' },
+        { name = 'treesitter' },
+        { name = 'path' },
+        { name = 'spell' },
+        { name = 'luasnip' },
     }),
     formatting = {
         format = lspkind.cmp_format({ with_text = false, maxwidth = 50 }),
     },
+})
+
+cmp.setup.buffer({
+    sources = cmp.config.sources({
+        { name = 'luasnip' },
+        {
+            name = 'buffer',
+            opts = {
+                get_bufnrs = function()
+                    return vim.api.nvim_list_bufs()
+                end,
+            },
+        },
+        { name = 'path' },
+        { name = 'spell' },
+    }),
 })
 
 vim.cmd [[
